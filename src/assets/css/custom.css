@@ -1,0 +1,357 @@
+.map-container {
+  width: 100%;
+  height: 75vh;
+}
+.map-container-multilocation-map {
+  width: 100%;
+  height: 80vh;
+}
+.css-vtbemp {
+  width: 70%;
+}
+.close-icon-modal {
+  cursor: pointer;
+}
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif);
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.contant_box_404 {
+  margin-top: -50px;
+}
+/* .aside-item-active.active {
+  background-color: #ede7f6;
+  color: #5e35b1;
+} */
+.link-redirect {
+  text-decoration: none;
+}
+.h2 {
+  text-align: center;
+}
+.para-err404 {
+  text-align: center;
+}
+.date-picker-container {
+  position: relative;
+}
+.date-picker-container1 {
+  position: relative;
+}
+
+/* Adjust the position of the CloseIcon as needed */
+.date-picker-container [data-testid="CloseIcon"] {
+  position: absolute;
+  top: 50%;
+  right: 43px; /* Adjust this value to control the horizontal position */
+  transform: translateY(29%);
+  font-size: 18px;
+  background-color: transparent; /* Optional: Remove the button's background */
+}
+.date-picker-container1 [data-testid="CloseIcon"] {
+  position: absolute;
+  top: 50%;
+  right: 43px; /* Adjust this value to control the horizontal position */
+  transform: translateY(29%);
+  font-size: 18px;
+  background-color: transparent; /* Optional: Remove the button's background */
+}
+audio {
+  height: 40px;
+  width: 220px;
+}
+.contacts-list {
+  height: 337px !important;
+  overflow-y: auto;
+}
+.contacts-list-info {
+  height: 40vh;
+  overflow-y: auto;
+}
+.single-contact {
+  cursor: pointer;
+}
+.css-3r391f {
+  height: 692px !important;
+}
+.video-container {
+  /* width: 373px; */
+  width: 100%;
+
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.video-container-stack {
+  /* width: 300px; */
+  width: 372px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.video-container-stack:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 480px) {
+  .video-container {
+    width: 300px;
+  }
+  .video-container-stack {
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+@media (max-width: 400px) {
+  .video-container {
+    width: 280px;
+  }
+  .video-container-stack {
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .video-container {
+    width: 200px;
+  }
+  .video-container-stack {
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+
+/* chat screen css start */
+
+.msger {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 867px;
+  margin: 25px 10px;
+  border: var(--border);
+  border-radius: 5px;
+}
+
+.msger-chat {
+  flex: 1;
+  padding: 10px;
+}
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+.msger-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.msg:last-of-type {
+  margin: 0;
+}
+.msg-bubble {
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #e3f2fd;
+}
+.msg-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.msg-info-time {
+  font-size: 0.85em;
+}
+
+.left-msg .msg-bubble {
+  border-bottom-left-radius: 0;
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+}
+.right-msg .msg-bubble {
+  background: #1e88e5;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+.right-msg .msg-img {
+  margin: 0 0 0 10px;
+}
+/* chat screen css end */
+.css-1l1njq7 {
+  background-color: #f2f5f7 !important;
+  margin-top: 68px !important;
+}
+.css-11bu8qf-MuiPaper-root-MuiCard-root {
+  border: 2px solid #65b8fb75 !important;
+}
+.css-1rquxd0-MuiButtonBase-root-MuiButton-root {
+  border-radius: 12px;
+}
+.aside-item-active.active {
+  background-color: #e3f2fd !important;
+  color: #1e88e5 !important;
+  border-radius: 0 !important;
+  border-right: 3px solid !important;
+}
+.MuiListItemIcon-root.css-1jsj0xp-MuiListItemIcon-root {
+  color: #1e88e5 !important;
+}
+.css-bpi7ug-MuiButtonBase-root-MuiListItemButton-root:hover {
+  background-color: #e3f2fd !important;
+  border-radius: 0 !important;
+  color: #1e88e5 !important;
+}
+.css-1dil0yb-MuiButtonBase-root-MuiListItemButton-root:hover {
+  color: #1e88e5 !important;
+}
+.css-bpi7ug-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+  background-color: #e3f2fd !important;
+  color: #1e88e5 !important;
+}
+.css-o4begf-MuiAvatar-root {
+  background-color: #e3f2fd !important;
+  color: #1e88e5 !important;
+}
+.css-o4begf-MuiAvatar-root:hover {
+  background-color: #1e88e5 !important;
+  color: #fff !important;
+}
+.ps__rail-x:hover {
+  width: 0px !important;
+}
+.ps__rail-y:hover {
+  height: 0px !important;
+}
+.css-y98c1y-MuiButtonBase-root-MuiListItemButton-root:hover {
+  background-color: #e3f2fd !important;
+}
+.css-y98c1y-MuiButtonBase-root-MuiListItemButton-root:hover
+  .MuiListItemIcon-root {
+  color: #1e88e5 !important;
+}
+.css-kvip5o-MuiToolbar-root {
+  padding: 10px 16px;
+}
+.css-a12ssa {
+  border: none !important;
+  border-radius: 12px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+@media (min-width: 992px) {
+  .top-five-app {
+    min-height: 335px;
+  }
+}
+/* .wipe-phone-icon {
+  background: "#E3F2FD" !important;
+  border-radius: "99%" !important;
+  font-size: "140px" !important;
+  padding: "30px" !important;
+  cursor: "pointer" !important;
+  color: "#616161" !important;
+} */
+.wipe-phone-icon .css-wsrap8-MuiSvgIcon-root {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: #E3F2FD;
+  border-radius: 99%;
+  font-size: 140px;
+  padding: 30px;
+  cursor: pointer;
+  color: #616161
+}
+.wipe-phone-icon .css-wsrap8-MuiSvgIcon-root:hover{
+  background-color: rgb(232, 240, 254);
+    color: #1E88E5;
+}
+.map-container-multilocation-map {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.folder-container-stack {
+  height: 120px;
+  overflow: auto;
+  width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.file-card {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.file-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.file-name {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  word-break: break-word;
+}

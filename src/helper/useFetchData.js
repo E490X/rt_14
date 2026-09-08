@@ -19,7 +19,6 @@ export function useFetchData(apiName, params, currentPageNumber) {
       console.log(err);
     }
   };
-
   useEffect(() => {
     let active = true;
 

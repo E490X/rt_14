@@ -112,7 +112,7 @@ const SnapchatLogs = () => {
       // }
 
       const response = await ApiUtils.getMessagesByExcel(
-        10,
+        1,
         userDeviceIdAsNumber,
         fromDate,
         toDate,

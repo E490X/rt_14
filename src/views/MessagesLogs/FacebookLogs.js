@@ -91,7 +91,7 @@ const FacebookLogs = () => {
     // }
 
     const response = await ApiUtils.getMessagesByExcel(
-      9,
+      7,       
       userDeviceIdAsNumber,  
       fromDate,
       toDate,

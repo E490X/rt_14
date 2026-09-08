@@ -272,7 +272,7 @@ const checkFile = (name) => {
                     color: "#fff",
                     border: "1px solid #e0e0e0",
                     borderRadius: "8px",
-                    backgroundColor: "#2196f3",
+                    backgroundColor: "#2196f3", 
                     "&:hover": {
                       backgroundColor: "#1e88e5",
                     },
@@ -351,20 +351,21 @@ const checkFile = (name) => {
                 color="inherit"
                 sx={{ fontWeight: "500" }}
               >
-                iPhone 617.3 GB used out of 1 TB
+                Syncing....
+                {/* iPhone 426.30 GB used out of 512 GB */}
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="h4"
                 color="inherit"
                 sx={{ fontWeight: "500" }}
               >
-                iCloud Drive: 492 items
+                iCloud Drive: 387 items 
                 <br />
-                On My iPhone: 48 items
+                On My iPhone: 68 items
                 <br />
-                Recently Deleted: 92 items
+                Recently Deleted: 94 items
                 <br />
-              </Typography>
+              </Typography> */}
             </div>
             {!filesDetail && data.length > 0 ? (
               <>
@@ -376,29 +377,21 @@ const checkFile = (name) => {
                         <>
                           <Grid>
                             <Box className="video-container">
-                              <div style={{ userSelect: "none" }}>
-                                <span
-                                  title={`Download ${
-                                    isFile ? "File" : "Folder"
-                                  }`}
-                                >
-                                  <FaDownload
-                                    color="blue"
-                                    stroke={2}
-                                    onClick={() => {
-                                      // downloadData(currentFolderId,`${filesDetail?.currentPath}/${Fileitem}`);
-                                      downloadData(
-                                        item.folderId,
-                                        item.rootName,
-                                      );
-                                    }}
-                                    style={{
-                                      float: "inline-end",
-                                      margin: "7px",
-                                      cursor: "pointer",
-                                    }}
-                                  />
-                                </span>
+                              <div style={{userSelect:"none"}}>
+                                <span title={`Download ${isFile ? "File" : "Folder"}`}> 
+                                <FaDownload
+                          color="blue"
+                          stroke={2}
+                          onClick={() => {
+                            // downloadData(currentFolderId,`${filesDetail?.currentPath}/${Fileitem}`);
+                            downloadData(item.folderId, item.rootName);
+                          }}
+                          style={{
+                            float: "inline-end",
+                            margin: "7px",
+                            cursor: "pointer",
+                          }}
+                        /></span>
                                 {/* <Checkbox
                                   type="checkbox"
                                 //   checked={childCheckedState?.includes(
@@ -457,7 +450,18 @@ const checkFile = (name) => {
                 />
               </>
             ) : (
-              <>{!filesDetail && <Grid item></Grid>}</>
+              <>
+                {!filesDetail && (
+                  <Grid item>
+                    <Typography
+                      variant="h4"
+                      color="inherit"
+                      sx={{ fontWeight: "500" }}
+                    >
+                    </Typography>
+                  </Grid>
+                )}
+              </>
             )}
 
             {filesDetail && (
@@ -477,21 +481,21 @@ const checkFile = (name) => {
                         <div>
                           <span title={`Download Folder`}>
                             <FaDownload
-                              color="blue"
-                              stroke={2}
-                              onClick={() => {
-                                downloadData(
-                                  currentFolderId,
-                                  `${filesDetail.currentPath}/${Folderitem}`,
-                                );
-                              }}
-                              style={{
-                                float: "inline-end",
-                                margin: "7px",
-                                cursor: "pointer",
-                              }}
-                            />
-                          </span>
+                                  color="blue"
+                                  stroke={2}
+                                  onClick={() => {
+                                    
+                                    downloadData(
+  currentFolderId,
+  `${filesDetail.currentPath}/${Folderitem}`
+);
+                                  }}
+                                  style={{
+                                    float: "inline-end",
+                                    margin: "7px",
+                                    cursor: "pointer",
+                                  }}
+                                /></span>
                         </div>
                         {/* <Button
                           className="link-redirect"
@@ -514,7 +518,7 @@ const checkFile = (name) => {
                           spacing={1}
                           onClick={() =>
                             handleSubFolderClick(
-                              `${filesDetail?.currentPath}/${Folderitem}`,
+                              `${filesDetail?.currentPath}/${Folderitem}`
                             )
                           }
                           sx={{ cursor: "pointer" }}
@@ -543,21 +547,17 @@ const checkFile = (name) => {
                         <div>
                           <span title={`Download File`}>
                             <FaDownload
-                              color="blue"
-                              stroke={2}
-                              onClick={() => {
-                                downloadData(
-                                  currentFolderId,
-                                  `${filesDetail?.currentPath}/${Fileitem}`,
-                                );
-                              }}
-                              style={{
-                                float: "inline-end",
-                                margin: "7px",
-                                cursor: "pointer",
-                              }}
-                            />
-                          </span>
+                          color="blue"
+                          stroke={2}
+                          onClick={() => {
+                            downloadData(currentFolderId,`${filesDetail?.currentPath}/${Fileitem}`);
+                          }}
+                          style={{
+                            float: "inline-end",
+                            margin: "7px",
+                            cursor: "pointer",
+                          }}
+                        /></span>
                         </div>
                         {/* <Button
                           className="link-redirect"

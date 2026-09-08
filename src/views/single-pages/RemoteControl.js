@@ -74,7 +74,7 @@ const RemoteControl = () => {
       <MainCard content={false} title="Remote Commands">
         <CardContent>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+            {/* <Grid item xs={12} md={6}>
               <Box
                 sx={{ display: "flex", justifyContent: "center" }}
                 onClick={() => handleOpenDialog(RecordSurroundModal, true)}
@@ -108,7 +108,7 @@ const RemoteControl = () => {
               >
                 Record Surround
               </Typography>
-            </Grid>{" "}
+            </Grid>{" "} */}
             {/* <Grid item xs={12} md={4}>
               <Box
                 sx={{ display: "flex", justifyContent: "center" }}
@@ -144,7 +144,7 @@ const RemoteControl = () => {
                 Power Off / Switch Off
               </Typography>
             </Grid>{" "} */}
-            <Grid item xs={12} md={6}>
+            {/* <Grid item xs={12} md={6}>
               <Box
                 sx={{ display: "flex", justifyContent: "center" }}
                 onClick={() => handleOpenDialog(PhoneWipeModal, false)}
@@ -180,7 +180,7 @@ const RemoteControl = () => {
               >
                 Wipe Phone
               </Typography>
-            </Grid>{" "}
+            </Grid>{" "} */}
             {/* <Grid item xs={12} md={3}>
               <Box
                 sx={{ display: "flex", justifyContent: "center" }}

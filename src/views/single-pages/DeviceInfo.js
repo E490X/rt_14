@@ -911,7 +911,7 @@ useEffect(() => {
           </Card>
 
           {/* Buttons */}
-          <Box
+          {/* <Box
             sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 2 }}
           >
                          <Button
@@ -963,7 +963,7 @@ useEffect(() => {
              >
                Restart
              </Button>
-          </Box>
+          </Box> */}
         </CardContent>
       </MainCard>
     </>

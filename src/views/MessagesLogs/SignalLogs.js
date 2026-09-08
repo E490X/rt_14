@@ -80,7 +80,7 @@ const SignalLogs = () => {
       const idsToSend = childCheckedState.length > 0 ? childCheckedState : [];
 
       const response = await ApiUtils.getMessagesByExcel(
-        7,
+        8,
         userDeviceIdAsNumber,
         fromDate,
         toDate,

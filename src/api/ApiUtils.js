@@ -61,6 +61,14 @@ const ApiUtils = {
       throw error.response;
     }
   },
+  getNotes: async function (params) {
+    try {
+      const response = await api.get(`Notes?${params}`);
+      return response;
+    } catch (error) {
+      throw error.response;
+    }
+  },
   getContacts: async function (params) {
     try {
       const response = await api.get(`Contacts?${params}`);

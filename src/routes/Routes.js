@@ -8,6 +8,7 @@ import DeviceInfo from "views/single-pages/DeviceInfo";
 import Locations from "views/single-pages/Locations";
 // import Videos from "views/single-pages/Videos";
 import Contacts from "views/PhoneLogs/Contacts";
+import Notes from "views/PhoneLogs/Notes";
 import GmailLogs from "views/PhoneLogs/GmailLogs";
 // import InternetHistory from "views/PhoneLogs/InternetHistory";
 import WhatsappLogs from "views/MessagesLogs/WhatsappLogs";
@@ -52,6 +53,7 @@ const privateRoutes = [
   { path: "/user/call-logs/:userDeviceId", component: CallLogs },
   { path: "/user/sms-logs/:userDeviceId", component: SmsLogs },
   { path: "/user/contacts/:userDeviceId", component: Contacts },
+  { path: "/user/notes/:userDeviceId", component: Notes },
   // { path: "/user/photos/:userDeviceId", component: Photos },
   // { path: "/user/videos/:userDeviceId", component: Videos },
   { path: "/user/phonestorage/:userDeviceId", component: Phonestorage },

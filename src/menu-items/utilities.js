@@ -28,6 +28,7 @@ import {
   FaSnapchat,
   FaHeartPulse,
   FaLinkedin,
+  FaNoteSticky,
 } from "react-icons/fa6";
 import { RiWhatsappFill } from "react-icons/ri";
 // constant
@@ -60,6 +61,7 @@ const icons = {
   FaSnapchat,
   FaHeartPulse,
   FaLinkedin,
+  FaNoteSticky,
   RiWhatsappFill,
 };
 
@@ -115,6 +117,15 @@ const utilities = {
           url: "/user/contacts",
           icon: icons.FaAddressBook,
           breadcrumbs: false,
+        },
+        {
+          id: "notes-logs",
+          title: "Notes",
+          type: "item",
+          url: "/user/notes",
+          icon: icons.FaNoteSticky,
+          breadcrumbs: false,
+          iosOnly: true,
         },
         // {
         //   id: "internet-history-logs",

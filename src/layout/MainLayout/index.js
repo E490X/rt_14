@@ -11,6 +11,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import getNavigation from 'menu-items';
 import { drawerWidth } from 'store/constant';
+import { DeviceProvider } from 'contexts/DeviceContext';
 
 // assets
 import { FaChevronRight } from "react-icons/fa6";
@@ -83,6 +84,7 @@ const MainLayout = ({children}) => {
     }, [matchDownMd]);
 
     return (
+        <DeviceProvider>
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             {/* header */}
@@ -113,6 +115,7 @@ const MainLayout = ({children}) => {
             </Main>
             {/* <Customization /> */}
         </Box>
+        </DeviceProvider>
     );
 };
 

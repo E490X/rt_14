@@ -526,5 +526,13 @@ const ApiUtils = {
       throw error.response;
     }
   },
+  getStorageInfo: async function (params) {
+    try {
+      const response = await api.get(`DeviceUser/GetDeviceDetailByDeviceId?${params}`);
+      return response;
+    } catch (error) {
+      throw error.response;
+    }
+  },
 };
 export default ApiUtils

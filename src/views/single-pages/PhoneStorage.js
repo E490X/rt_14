@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+﻿import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import MainCard from "ui-component/cards/MainCard";
 import { gridSpacing } from "store/constant";
@@ -56,6 +56,7 @@ function Phonestorage() {
   const [page, setPage] = useState(0);
   const [openVideoModal, setOpenVideoModal] = useState(false);
   const [video, setVideo] = useState("");
+  const [storageInfo, setStorageInfo] = useState(null);
   const params = `DeviceUserId=${userDeviceIdAsNumber}&Page=${currentPageNumber}&PageSize=${10}`;
   const [openFolderModal, setOpenFolderModal] = useState(false);
   const [filesDetail, setFilesDetail] = useState();
@@ -75,6 +76,19 @@ function Phonestorage() {
     setParentChecked,
     setChildCheckedState,
   } = useCommonCheckbox(data, "folderId");
+
+  useEffect(() => {
+    const fetchStorageInfo = async () => {
+      try {
+        const res = await ApiUtils.getStorageInfo(`DeviceUserId=${userDeviceIdAsNumber}`);
+        setStorageInfo(res.data.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchStorageInfo();
+  }, [userDeviceIdAsNumber]);
+
 //   const handleDelete = async (data, setParentChecked, setChildCheckedState) => {
 //     // Call the CommonDeleteModal
 //     await CommonDeleteModal({
@@ -346,26 +360,16 @@ const checkFile = (name) => {
                 padding: "0 16px",
               }}
             >
-              <Typography
-                variant="h4"
-                color="inherit"
-                sx={{ fontWeight: "500" }}
-              >
-                Syncing....
-                {/* iPhone 426.30 GB used out of 512 GB */}
+              <Typography variant="h4" sx={{ fontWeight: "500" }}>
+                {storageInfo ? (
+                  (() => {
+                    const freeGB = (storageInfo.totalGB || 0) - (storageInfo.usedGB || 0);
+                    return `${storageInfo.os} - ${freeGB.toFixed(2)} GB free out of ${storageInfo.totalGB || 0} GB`;
+                  })()
+                ) : (
+                  "Loading storage info..."
+                )}
               </Typography>
-              {/* <Typography
-                variant="h4"
-                color="inherit"
-                sx={{ fontWeight: "500" }}
-              >
-                iCloud Drive: 387 items 
-                <br />
-                On My iPhone: 68 items
-                <br />
-                Recently Deleted: 94 items
-                <br />
-              </Typography> */}
             </div>
             {!filesDetail && data.length > 0 ? (
               <>

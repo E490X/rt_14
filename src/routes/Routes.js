@@ -8,7 +8,7 @@ import DeviceInfo from "views/single-pages/DeviceInfo";
 import Locations from "views/single-pages/Locations";
 // import Videos from "views/single-pages/Videos";
 import Contacts from "views/PhoneLogs/Contacts";
-import Notes from "views/PhoneLogs/Notes";
+// import Notes from "views/PhoneLogs/Notes";
 import GmailLogs from "views/PhoneLogs/GmailLogs";
 // import InternetHistory from "views/PhoneLogs/InternetHistory";
 import WhatsappLogs from "views/MessagesLogs/WhatsappLogs";
@@ -16,7 +16,7 @@ import WhatsappLogs from "views/MessagesLogs/WhatsappLogs";
 // import Screenshots from "views/single-pages/Screenshots";
 import InstalledApps from "views/single-pages/InstalledApps";
 // import WifiNetwork from "views/single-pages/WifiNetwork";
-import SignalLogs from "views/MessagesLogs/SignalLogs";
+// import SignalLogs from "views/MessagesLogs/SignalLogs";
 // import KikLogs from "views/MessagesLogs/KikLogs";
 // import LineLogs from "views/MessagesLogs/LineLogs";
 // import TinderLogs from "views/MessagesLogs/TinderLogs";
@@ -53,7 +53,7 @@ const privateRoutes = [
   { path: "/user/call-logs/:userDeviceId", component: CallLogs },
   { path: "/user/sms-logs/:userDeviceId", component: SmsLogs },
   { path: "/user/contacts/:userDeviceId", component: Contacts },
-  { path: "/user/notes/:userDeviceId", component: Notes },
+  // { path: "/user/notes/:userDeviceId", component: Notes },
   // { path: "/user/photos/:userDeviceId", component: Photos },
   // { path: "/user/videos/:userDeviceId", component: Videos },
   { path: "/user/phonestorage/:userDeviceId", component: Phonestorage },
@@ -75,7 +75,7 @@ const privateRoutes = [
   // { path: "/user/screen-time/:userDeviceId", component: ScreenTime },
   // { path: "/user/keylogger/:userDeviceId", component: KeyLogger },
   // { path: "/user/remote-control/:userDeviceId", component: RemoteControl },
-  { path: "/user/signal/:userDeviceId", component: SignalLogs },
+  // { path: "/user/signal/:userDeviceId", component: SignalLogs },
   // { path: "/user/snapchat/:userDeviceId", component: SnapchatLogs },
   // { path: "/user/record-surrond/:userDeviceId", component: RecordSurround },
   // { path: "/user/apple-health/:userDeviceId", component: AppleHealth },

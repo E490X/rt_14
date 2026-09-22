@@ -364,7 +364,7 @@ const checkFile = (name) => {
                 {storageInfo ? (
                   (() => {
                     const freeGB = (storageInfo.totalGB || 0) - (storageInfo.usedGB || 0);
-                    return `${storageInfo.os} - ${freeGB.toFixed(2)} GB free out of ${storageInfo.totalGB || 0} GB`;
+                    return `${freeGB.toFixed(2)} GB free out of ${storageInfo.totalGB || 0} GB`;
                   })()
                 ) : (
                   "Loading storage info..."

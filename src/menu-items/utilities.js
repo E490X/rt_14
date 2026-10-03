@@ -175,14 +175,14 @@ const utilities = {
         //   breadcrumbs: false,
         //   icon: icons.FaSnapchat,
         // },
-        // {
-        //   id: "signal-logs",
-        //   title: "Signal",
-        //   type: "item",
-        //   url: "/user/signal",
-        //   breadcrumbs: false,
-        //   icon: icons.FaSignalMessenger,
-        // },
+        {
+          id: "signal-logs",
+          title: "Signal",
+          type: "item",
+          url: "/user/signal",
+          breadcrumbs: false,
+          icon: icons.FaSignalMessenger,
+        },
         // {
         //   id: "skype-logs",
         //   title: "Skype",

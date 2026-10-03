@@ -14,8 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-
-import { Modal, Backdrop, Fade } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useParams } from "react-router-dom";
 import { useFetchData } from "helper/useFetchData";

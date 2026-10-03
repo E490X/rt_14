@@ -49,7 +49,7 @@ function ListOfDevices() {
         setCardDetailsData(dataTable);
       })
       .catch((err) => {
-        console.log("🚀 ~ file: Dashboard.tsx:39 ~ ).then ~ err:", err);
+        console.log("sfile: Dashboard.tsx:39 ~ ).then ~ err:", err);
       });
     setOpen(true);
   };
@@ -67,7 +67,7 @@ function ListOfDevices() {
         </Link>
       ),
     },
-    { field: "userName", headerName: "Name", flex: 1 },
+    { field: "name", headerName: "Name", flex: 1 },
     // { field: "cnic", headerName: "CNIC", flex: 1 },
     // { field: "number", headerName: "Number", flex: 1 },
     { field: "email", headerName: "Email", flex: 1 },

@@ -23,6 +23,7 @@ import MultiLocationMap from "./MultiLocationMap";
 import { getParamUrl } from "helper/UrlHelper";
 
 function Locations() {
+  
   const style = {
     position: "absolute",
     top: "50%",
@@ -37,6 +38,7 @@ function Locations() {
   const urlParam = useParams();
   const userDeviceIdAsNumber = urlParam.userDeviceId;
   const [center, setCenter] = useState({ lat: 0, lng: 0 });
+  const [zoom, setZoom] = useState(5);
   const [paginationModel, setPaginationModel] = React.useState({
     page: 0,
     pageSize: 10,
@@ -108,12 +110,14 @@ function Locations() {
         <GridActionsCellItem
           icon={<LocationOnIcon sx={{ color: "#616161" }} />}
           label="map"
-          onClick={() =>
+          onClick={() => {
             setCenter({
               lat: Number(params.row.latitude),
               lng: Number(params.row.longitude),
-            })
-          }
+            });
+            setZoom(17);
+          }}
+          
         />,
       ],
     },
@@ -189,7 +193,7 @@ function Locations() {
           <Grid container spacing={gridSpacing}>
             <Grid item xs={4}>
               {/* <LocationMap center={center} /> */}
-              <OpenStreetMap center={center} />
+              <OpenStreetMap center={center} zoom={zoom} />
             </Grid>
             <Grid item xs={8}>
               <Grid container spacing={gridSpacing}>

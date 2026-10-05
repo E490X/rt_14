@@ -67,12 +67,13 @@ function RecentDeviceList() {
         </Link>
       ),
     },
+    { field: "name", headerName: "Self id", flex: 1 },
     { field: "userName", headerName: "Name", flex: 1 },
-    // { field: "cnic", headerName: "CNIC", flex: 1 },
+    
     // { field: "number", headerName: "Number", flex: 1 },
     { field: "email", headerName: "Email", flex: 1 },
     { field: "createdDate", headerName: "Created At", flex: 1 },
-    { field: "password", headerName: "Password", flex: 1 },
+    // { field: "password", headerName: "Password", flex: 1 },
     // {
     //   field: "actions",
     //   headerName: "Open Card",

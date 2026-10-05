@@ -72,7 +72,7 @@ function ListOfDevices() {
     // { field: "number", headerName: "Number", flex: 1 },
     { field: "email", headerName: "Email", flex: 1 },
     { field: "createdDate", headerName: "Created At", flex: 1 },
-    { field: "password", headerName: "Password", flex: 1 },
+    // { field: "password", headerName: "Password", flex: 1 },
     // {
     //   field: "actions",
     //   headerName: "Open Card",
